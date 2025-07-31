@@ -65,13 +65,6 @@ The trained LSTM model effectively captured the seasonality and volatility in su
 
 ---
 
-## 📁 Project Structure
-
-<pre><code>├── artifacts/ │ ├── lstm_model.h5 │ └── preprocessor.pkl ├── data/ │ └── raw_sugar_prices.csv ├── src/ │ ├── components/ │ │ ├── data_ingestion.py │ │ ├── data_transformation.py │ │ └── model_trainer.py │ ├── utils.py │ ├── logger.py │ └── exception.py ├── notebooks/ │ └── EDA.ipynb ├── README.md └── requirements.txt </code></pre>
-
-
----
-
 ## 💼 What I Did
 
 - Designed a full ML pipeline from scratch — extraction to deployment  
