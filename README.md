@@ -34,7 +34,8 @@ This end-to-end machine learning pipeline forecasts future sugar prices using **
 2. **Exploratory Data Analysis**  
    - Visualized price trends  
    - Identified missing values and market irregularities  
-   - Standardized units and resolved data quality issues  
+   - Standardized units and resolved data quality issues
+   - compared different models like ARIMA, SARIMA, LSTM, PROPHET to choose best model
 
 3. **Data Transformation**  
    - Converted date strings to datetime index  
@@ -62,26 +63,11 @@ The trained LSTM model effectively captured the seasonality and volatility in su
 | MAE    | ~1.75 |
 | MAPE   | ~1.49% |
 
-*(Replace X.XX with actual values after final run)*
-
 ---
 
 ## 📁 Project Structure
 
-├── artifacts/
-│   ├── lstm_model.h5
-│   └── preprocessor.pkl
-├── data/
-│   └── raw_sugar_prices.csv
-├── src/
-│   ├── components/
-│   ├── utils.py
-│   ├── logger.py
-│   └── exception.py
-├── notebooks/
-│   └── EDA.ipynb
-├── README.md
-└── requirements.txt
+<pre><code>├── artifacts/ │ ├── lstm_model.h5 │ └── preprocessor.pkl ├── data/ │ └── raw_sugar_prices.csv ├── src/ │ ├── components/ │ │ ├── data_ingestion.py │ │ ├── data_transformation.py │ │ └── model_trainer.py │ ├── utils.py │ ├── logger.py │ └── exception.py ├── notebooks/ │ └── EDA.ipynb ├── README.md └── requirements.txt </code></pre>
 
 
 ---
